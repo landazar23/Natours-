@@ -1,7 +1,7 @@
 .form {
-  // .form__group .form__input[type="text"]:focus {
-  //   background-color: red;
-  // }
+  .form__group .form__input:focus {
+    background-color: red;
+  }
 
   &__group:not(:last-child) {
     margin-bottom: 2rem;
