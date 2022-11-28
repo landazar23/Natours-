@@ -1,11 +1,11 @@
 .form {
-  .form__group .form__input:focus {
-    background-color: red;
+  &__group &__input[type="email"]:focus + &__input[type="text"] {
+    transform: translate(2rem);
   }
 
-  &__group:not(:last-child) {
-    margin-bottom: 2rem;
-  }
+  // &__group:not(:last-child) {
+  //   margin-bottom: 2rem;
+  // }
 
   &__input {
     font-size: 1.5rem;
@@ -42,6 +42,7 @@
     font-weight: 700;
     margin-left: 2rem;
     margin-top: 0.7rem;
+    margin-bottom: 2rem;
     display: block;
     transition: all 0.3s;
   }
